@@ -1,0 +1,21 @@
+{
+    "name": "Braintrust Platform Converter",
+    "manifest_version": 3,
+    "version": "1.0.00",
+    "description": "Allows Quick Converting between Greenhouse and the Braintrust Platform for Talent and Jobs.",
+    "author": "Matt Fox",
+    "icons": {
+              "128": "/images/icons/icon128.png" },
+
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+      },
+
+    "permissions": [
+        "tabs","storage","activeTab","scripting"
+    ],
+    "host_permissions": ["https://*/"]
+}
